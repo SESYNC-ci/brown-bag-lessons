@@ -1,8 +1,8 @@
 # Site settings
-title: SESYNC Tech Blog
+title: SESYNC Brown Bag Lunch Seminars
 email: itrequests@sesync.org
-description: "SESYNC Technical Blog"
-baseurl: "http://sesync-ci.github.io/blog"
+description: "SESYNC Brown Bag Lunch Seminars"
+baseurl: "http://sesync-ci.github.io/brown-bag-lessons"
 url: "http://www.sesync.org"
 twitter_username: sesync
 github_username:  SESYNC-ci
