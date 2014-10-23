@@ -25,10 +25,10 @@ read.csv(file="nfs/public-data/Ed/UAWG_AberjonaHydro")
 
 *A note about functions*
 
-  Generic function  | More specific function
-  ----------------- | -------------
-  read.table()      | read.csv()
-  paste()           | paste0()
+---
+Generic function: read.table(), paste()
+More specific function: read.csv(), paste0()
+---
   
 
 The more specific example of the function is similar to the generic function but has some specific default arguments. 
