@@ -6,6 +6,102 @@ categories: lessons R
 author: khondula
 ---
 
+**Recap from Thursday: Some basics & data types**
+
++ character strings
++ numeric data
++ colnames
+
+**Importing data**
+
+A simple way to read data into RStudio is to save your spreadsheet as a .csv file and use the function read.csv(). The RStudio server can read files from the network file share (recommended), or files that you upload directly to the RStudio Server. 
+
+Files for R Lessons are in the network file share in the public data folder. You can read files from this folder but not save things there. Save your own files to your data folder (or your project's folder). 
+
+{% highlight R %}
+read.csv(file="nfs/public-data/Ed/UAWG_AberjonaHydro")
+{% endhighlight %}
+
+
+*A note about functions*
+
+  Generic function  | More specific function
+  ----------------- | -------------
+  read.table()      | read.csv()
+  paste()           | paste0()
+  
+
+The more specific example of the function is similar to the generic function but has some specific default arguments. 
+- read.csv() uses commas as separators and header=TRUE
+- paste0 does not put spaces between the things you are combining
+
+Look at the help documentation for the read.csv() function to understand the usage. Compare the default settings for arguments with read.table(), read.csv(), and read.csv2()
+
+{% highlight R %}
+
+?read.csv
+
+read.csv(file, header = TRUE, sep = ",", quote = "\"",
+         dec = ".", fill = TRUE, comment.char = "", ...)
+		 
+{% endhighlight %}
+
+Look at the help documentation for the paste() function to understand the usage. Compare the default settings for paste() and paste0(). 
+
+{% highlight R %}
+?paste
+{% endhighlight %}
+
+
+**special characters**
+
+![alt text](http://imgs.xkcd.com/comics/exploits_of_a_mom.png   )	
+
+Certain characters are interpreted by the computer as a signal to treat what follows that character in a special way, like punctuation. It is advisable to not use these characters in column names or file names if you can avoid it. 
+
+Some examples of special characters to watch out for:
+- %
+- /
+- "
+- $
+
+Single quotes and double quotes are both used for character strings but mean slightly different things. Use single quotes if you want the entire text inside of the quotes to be interpreted as characters, for example if you have a string that includes a quotation. 
+
+For example, perhaps you are plotting the number of times something was said.
+
+Which one(s) of these would correctly label the y axis as *Number of times "hi" was spoken*?
+
+{% highlight R %}
+ylab="Number of times "hi" was spoken"
+{% endhighlight %}
+
+{% highlight R %}
+ylab='Number of times "hi" was spoken
+{% endhighlight %}
+
+{% highlight R %}
+ylab="Number of times \"hi\" was spoken"
+{% endhighlight %}
+
+
+
++ data frames
+	- columns are all the same length
+	- each column has the same type of data within that column
++ identifying column names with $
++ identifying rows and columns with [ ]
++ replace strings with NA
+	- na.strings=c()
+	- colClasses=c()
+	- is.na()
+
+	
+
+
+![alt text](http://imgs.xkcd.com/comics/the_general_problem.png  )
+
+
+
 **Goals:**
 ==========
 1. Load the data
