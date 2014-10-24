@@ -1,39 +1,51 @@
 ---
 layout: post
-title:  "R Class Notes 23 Oct 2014"
-date:   2014-10-23
+title:  "Data frames"
+date:   2014-10-20
 categories: lessons R
 author: khondula
 ---
 
-+ character strings
-+ numeric data
-+ colnames
-+ functions
+Data frames
+===========
 
-generic | more specific
---------| -------------
-read.table() | read.csv()
-paste() | paste0()
+Basic features:
++ Data frames have rows and columns, like a spreadsheet in Excel. 
++ All of the columns must be the same length.
++ Within each column, all of the data must be the same type or "class" such as numeric or character
+	- If a column of numbers has a word such as "missing data", that column will default to all character data
+	- Use colClasses= or na.strings= to change that on import, or you can replace unwanted/missing data once your data is imported
 
-The more specific example of the function is similar to the generic function but has some specific default arguments. 
-- read.csv() uses commas as separators and header=TRUE
-- paste0 does not put spaces between the things you are combining
+How to identify parts of your data frame:
++ Columns can be identified by their name
+{% highlight R %} 
+mydata$columnname
+{% endhighlight %}
++ Bracket notation identifies rows and/or columns
 
-+ look for this information in the help documentation of each function
+{% highlight R %} 
+mydata[2,1]
+{% endhighlight %}
 
-+ special characters like %
-![alt text](http://imgs.xkcd.com/comics/exploits_of_a_mom.png   )	
+{% highlight R %} 
+mydata[2,]
+{% endhighlight %}
 
-+ data frames
-	- columns are all the same length
-	- each column has the same type of data within that column
-+ identifying column names with $
-+ identifying rows and columns with [ ]
-+ replace strings with NA
-	- na.strings=c()
-	- colClasses=c()
-	- is.na()
+{% highlight R %} 
+mydata[,3]
+{% endhighlight %}
+
+{% highlight R %} 
+mydata[,"col3"]
+{% endhighlight %}
+
+{% highlight R %} 
+mydata[,ncol(mydata)]
+{% endhighlight %}
+
+
+
+
 
 	
 
