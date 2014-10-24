@@ -46,8 +46,9 @@ ylab="Number of times \"hi\" was spoken"
 
 
 ## Review of data frames
-	- columns are all the same length
-	- each column has the same type of data within that column (numeric, character, factor)
+
++ columns are all the same length
++ each column has the same type of data within that column (numeric, character, factor)
 + identifying column names with $
 + identifying rows and columns with [ , ]
 + replace strings with NA
