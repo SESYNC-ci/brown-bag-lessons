@@ -62,6 +62,6 @@ mydata[c(1,3:5),c("col2", "col4")]
 
 ## Merging and combining dataframes
 
-*cbind()
-*rbind()
-*merge(dataframeA, dataframeB, by.x=, by.y=, all.x=TRUE, all.y=TRUE)
+* cbind()
+* rbind()
+* merge(dataframeA, dataframeB, by.x=, by.y=, all.x=TRUE, all.y=TRUE)
