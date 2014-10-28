@@ -2,7 +2,7 @@
 layout: post
 title:  "Practice saving and loading data"
 date:   2014-10-28
-categories: R homework
+categories: homework R
 author: khondula
 ---
 
