@@ -22,7 +22,7 @@ Recall that the network file storage is where your individual "name-data" folder
 
 If you want to find these folders and look at their contents in your file browser,
 
-* on a PC: Open a file browser window and type "\\storage.research.sesync.org" into the address bar (click in the address bar to type into it)
+* on a PC: Open a file browser window and type '\\storage.research.sesync.org' into the address bar (click in the address bar to type into it)
 * on a Mac:
 
 Note that the files in the Ed folder have the .csv file extension. We recommend saving your Excel files as a .csv in order to load them into R for analysis. This assumes that your first row has column headings.
