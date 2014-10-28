@@ -44,7 +44,6 @@ After running the second line, look at the upper right window of RStudio in the 
 
 For the rest of the homework practice, copy and paste everything in the gray window below into your R script. There are step-by-step instructions for what to do. Refer back to the other class notes pages from the list here (http://sesync-ci.github.io/brown-bag-lessons/) when you need to. 
 
-![image here]({{ http://sesync-ci.github.io/brown-bag-lessons/ }} _posts/_assets/rstudioSchematic.jpg)
 
  {% highlight R %}
 
@@ -104,11 +103,11 @@ For the rest of the homework practice, copy and paste everything in the gray win
 # for example,
 
 png("myplot.png", width=480, height=480)
-plot(mydata$xvariable, mydata$yvariable, col="red, pch=21)
+plot(mydata$xvariable, mydata$yvariable, col="red", pch=21)
 dev.off()
 
 # png width and height specifications are in pixels by default
 # whereas pdf width and height specifications are in inches by default
-# Or, you can use the units argument to specify inches, cm, etc. 
+# Or, you can use the units argument to specify inches, cm, etc.  
 
 {% endhighlight %}
