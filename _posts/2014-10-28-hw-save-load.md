@@ -2,7 +2,7 @@
 layout: post
 title:  "Practice saving and loading data"
 date:   2014-10-28
-categories: homework R
+categories: R homework
 author: khondula
 ---
 
@@ -16,7 +16,7 @@ Main concepts:
 
 ### Loading a spreadsheet file into RStudio
 
-![My helpful screenshot]({{ http://sesync-ci.github.io/brown-bag-lessons/ }}/_assets/rstudioSchematic.jpg)
+![image here]({{ site.url }}/_posts/_assets/rstudioSchematic.jpg)
 
 
 1. Load the data
