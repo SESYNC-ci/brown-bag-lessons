@@ -16,7 +16,7 @@ Main concepts:
 
 ### Loading a spreadsheet file into RStudio
 
-![image here]({{ site.url }}/_posts/_assets/rstudioSchematic.jpg)
+![image here]({{ http://sesync-ci.github.io }}/brown-bag-lessons/_posts/_assets/rstudioSchematic.jpg)
 
 
 1. Load the data
